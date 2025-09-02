@@ -29,85 +29,78 @@
         font-family: "Plus Jakarta Sans", sans-serif;
       }
     </style>
-    <style>
-        body {
-            min-height: 100dvh;
-        }
-    </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-    <div class="relative flex size-full min-h-screen flex-col justify-between overflow-x-hidden">
-        <div class="w-full">
-            <header class="flex items-center justify-between p-4">
-                <a class="flex h-10 w-10 items-center justify-center" href="home.html">
-                    <span class="material-icons text-gray-900">arrow_back</span>
-                </a>
-                <h1 class="text-xl font-bold text-gray-900">Profile</h1>
-                <div class="h-10 w-10"></div>
-            </header>
-            <main class="p-4">
-                <div class="flex flex-col items-center gap-4">
-                    <div class="h-24 w-24 rounded-full bg-cover bg-center"
-                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAz2LsAr1nkhmyhrSFnPKpaRTKCSPAqcI-ezmPkoHFtyCyY3FX8GJPP8YaZ1Fxsc9Tg2fa1wNQdqF5Wmv35qbMKreiEPkz0CgRkWQw12kabjXhs7SzveVj7dsRadxGsOhzG9i0NTgcWbdIRJW-HtrUvwL0WniGK43KUoA0cPH4Pg4fzqHY1mYufcL8-lEe94xRH5fCK6_m18-4UtytLbpEiG2syyiFXIhzFghin-rJdoS0aDMhNnbKUioomLP0o2Dn4AgG3TYtyV4");'>
-                    </div>
-                    <div class="text-center">
-                        <p class="text-xl font-bold text-gray-900">Ethan Carter</p>
-                        <p class="text-sm text-gray-500">ethan.carter@email.com</p>
+    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+        <header class="sticky top-0 z-10 flex items-center justify-between p-4 bg-white shadow-sm">
+            <a class="flex h-10 w-10 items-center justify-center" href="home.html">
+                <span class="material-icons text-gray-900">arrow_back</span>
+            </a>
+            <h1 class="text-xl font-bold text-gray-900">Profile</h1>
+            <div class="h-10 w-10"></div>
+        </header>
+        <main class="flex-grow overflow-y-auto p-4">
+            <div class="flex flex-col items-center gap-4">
+                <div class="h-24 w-24 rounded-full bg-cover bg-center"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAz2LsAr1nkhmyhrSFnPKpaRTKCSPAqcI-ezmPkoHFtyCyY3FX8GJPP8YaZ1Fxsc9Tg2fa1wNQdqF5Wmv35qbMKreiEPkz0CgRkWQw12kabjXhs7SzveVj7dsRadxGsOhzG9i0NTgcWbdIRJW-HtrUvwL0WniGK43KUoA0cPH4Pg4fzqHY1mYufcL8-lEe94xRH5fCK6_m18-4UtytLbpEiG2syyiFXIhzFghin-rJdoS0aDMhNnbKUioomLP0o2Dn4AgG3TYtyV4");'>
+                </div>
+                <div class="text-center">
+                    <p class="text-xl font-bold text-gray-900">Ethan Carter</p>
+                    <p class="text-sm text-gray-500">ethan.carter@email.com</p>
+                </div>
+            </div>
+            <div class="mt-8 space-y-6">
+                <div>
+                    <h2 class="px-4 text-sm font-semibold text-gray-500">Account</h2>
+                    <div class="mt-2 space-y-1">
+                        <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
+                            href="#">
+                            <p class="text-base text-gray-800">Personal Details</p>
+                            <span class="material-icons text-gray-400">chevron_right</span>
+                        </a>
+                        <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
+                            href="#">
+                            <p class="text-base text-gray-800">Contact Information</p>
+                            <span class="material-icons text-gray-400">chevron_right</span>
+                        </a>
                     </div>
                 </div>
-                <div class="mt-8 space-y-6">
-                    <div>
-                        <h2 class="px-4 text-sm font-semibold text-gray-500">Account</h2>
-                        <div class="mt-2 space-y-1">
-                            <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
-                                href="#">
-                                <p class="text-base text-gray-800">Personal Details</p>
-                                <span class="material-icons text-gray-400">chevron_right</span>
-                            </a>
-                            <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
-                                href="#">
-                                <p class="text-base text-gray-800">Contact Information</p>
-                                <span class="material-icons text-gray-400">chevron_right</span>
-                            </a>
+                <div>
+                    <h2 class="px-4 text-sm font-semibold text-gray-500">
+                        App Settings
+                    </h2>
+                    <div class="mt-2 space-y-1">
+                        <div class="flex items-center justify-between rounded-lg bg-white p-4">
+                            <p class="text-base text-gray-800">Language</p>
+                            <p class="text-base text-gray-500">English</p>
                         </div>
-                    </div>
-                    <div>
-                        <h2 class="px-4 text-sm font-semibold text-gray-500">
-                            App Settings
-                        </h2>
-                        <div class="mt-2 space-y-1">
-                            <div class="flex items-center justify-between rounded-lg bg-white p-4">
-                                <p class="text-base text-gray-800">Language</p>
-                                <p class="text-base text-gray-500">English</p>
-                            </div>
-                            <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
-                                href="#">
-                                <p class="text-base text-gray-800">Notifications</p>
-                                <span class="material-icons text-gray-400">chevron_right</span>
-                            </a>
-                            <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
-                                href="#">
-                                <p class="text-base text-gray-800">Privacy Policy</p>
-                                <span class="material-icons text-gray-400">chevron_right</span>
-                            </a>
-                            <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
-                                href="#">
-                                <p class="text-base text-gray-800">Terms of Service</p>
-                                <span class="material-icons text-gray-400">chevron_right</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="pt-4">
-                        <button
-                            class="w-full rounded-lg bg-var(--primary-50) py-3 text-base font-bold text-var(--primary-600) transition-colors hover:bg-var(--primary-100)">
-                            Log Out
-                        </button>
+                        <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
+                            href="#">
+                            <p class="text-base text-gray-800">Notifications</p>
+                            <span class="material-icons text-gray-400">chevron_right</span>
+                        </a>
+                        <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
+                            href="#">
+                            <p class="text-base text-gray-800">Privacy Policy</p>
+                            <span class="material-icons text-gray-400">chevron_right</span>
+                        </a>
+                        <a class="flex items-center justify-between rounded-lg bg-white p-4 transition-colors hover:bg-gray-100"
+                            href="#">
+                            <p class="text-base text-gray-800">Terms of Service</p>
+                            <span class="material-icons text-gray-400">chevron_right</span>
+                        </a>
                     </div>
                 </div>
-            </main>
-        </div>
-        <footer class="sticky bottom-0 border-t border-gray-200 bg-white">
+                <div class="pt-4">
+                    <button
+                        class="w-full rounded-lg bg-var(--primary-50) py-3 text-base font-bold text-var(--primary-600) transition-colors hover:bg-var(--primary-100)">
+                        Log Out
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer class="sticky bottom-0 z-10 border-t border-gray-200 bg-white shadow-[0_-1px_3px_rgba(0,0,0,0.1)]">
             <nav class="flex items-center justify-around px-4 pb-2 pt-1">
                 <a class="flex flex-col items-center justify-center gap-1 text-gray-500 transition-colors hover:text-red-600"
                     href="home.html">
