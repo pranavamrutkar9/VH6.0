@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --primary-50: #fef2f2;
+        --primary-100: #fee2e2;
+        --primary-200: #fecaca;
+        --primary-300: #fca5a5;
+        --primary-400: #f87171;
+        --primary-500: #ef4444;
+        --primary-600: #dc2626;
+        --primary-700: #b91c1c;
+        --primary-800: #991b1b;
+        --primary-900: #7f1d1d;
+        --primary-950: #450a0a;
+      }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root">
+        <div class="flex-grow">
+            <header class="sticky top-0 z-10 bg-gray-50/80 backdrop-blur-sm">
+                <div class="flex items-center p-4">
+                    <a class="flex size-10 items-center justify-center rounded-full" href="home.html">
+                        <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+                            </path>
+                        </svg>
+                    </a>
+                    <h1 class="flex-1 text-center text-lg font-bold">Biosecurity Checklist</h1>
+                    <div class="w-10"></div>
+                </div>
+            </header>
+            <main class="p-4">
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-xl font-bold">Farm Entry</h2>
+                        <div class="mt-4 space-y-4">
+                            <label
+                                class="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4">
+                                <span class="text-base">Designated entry points are clearly marked.</span>
+                                <input
+                                    class="form-radio h-5 w-5 border-gray-300 text-primary-600 focus:ring-primary-600"
+                                    name="entry" type="radio" />
+                            </label>
+                            <label
+                                class="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4">
+                                <span class="text-base">Footbaths are maintained and used at all entry points.</span>
+                                <input
+                                    class="form-radio h-5 w-5 border-gray-300 text-primary-600 focus:ring-primary-600"
+                                    name="entry" type="radio" />
+                            </label>
+                            <label
+                                class="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4">
+                                <span class="text-base">Visitor logs are in place and up-to-date.</span>
+                                <input
+                                    class="form-radio h-5 w-5 border-gray-300 text-primary-600 focus:ring-primary-600"
+                                    name="entry" type="radio" />
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold">Vehicle Management</h2>
+                        <div class="mt-4 space-y-4">
+                            <label
+                                class="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4">
+                                <span class="text-base">Vehicles are cleaned and disinfected before entering the
+                                    farm.</span>
+                                <input
+                                    class="form-radio h-5 w-5 border-gray-300 text-primary-600 focus:ring-primary-600"
+                                    name="vehicle" type="radio" />
+                            </label>
+                            <label
+                                class="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4">
+                                <span class="text-base">Designated parking areas are used for all vehicles.</span>
+                                <input
+                                    class="form-radio h-5 w-5 border-gray-300 text-primary-600 focus:ring-primary-600"
+                                    name="vehicle" type="radio" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 rounded-lg bg-white p-6 shadow-sm">
+                    <h2 class="text-xl font-bold">Risk Assessment</h2>
+                    <div class="mt-4 flex items-center justify-between">
+                        <p class="text-base font-medium">Your Risk Score</p>
+                        <span class="rounded-full bg-yellow-100 px-3 py-1 text-sm font-semibold text-yellow-800">Medium
+                            Risk</span>
+                    </div>
+                    <p class="mt-4 text-gray-600">Based on your responses, your farm's biosecurity risk is moderate.
+                        Consider implementing the following recommendations to improve your practices.</p>
+                </div>
+                <div class="mt-8">
+                    <h2 class="text-xl font-bold">Recommendations</h2>
+                    <div class="mt-4 space-y-3">
+                        <div class="flex items-start gap-4 rounded-lg bg-primary-50 p-4">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-primary-600" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <p class="flex-1 text-base text-primary-800">Enhance visitor entry protocols</p>
+                        </div>
+                        <div class="flex items-start gap-4 rounded-lg bg-primary-50 p-4">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-primary-600" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <p class="flex-1 text-base text-primary-800">Improve vehicle disinfection procedures</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="sticky bottom-0 border-t border-gray-200 bg-white/90 backdrop-blur-sm">
+            <nav class="flex justify-around p-2">
+                <a class="flex flex-col items-center gap-1 text-gray-500" href="home.html">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h7.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <span class="text-xs font-medium">Dashboard</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-gray-500" href="records.html">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <span class="text-xs font-medium">Records</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-primary-600" href="appointment.html">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-xs font-medium">Appointments</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-gray-500" href="training.html">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9A2.25 2.25 0 0 0 13.5 5.25h-9A2.25 2.25 0 0 0 2.25 7.5v9A2.25 2.25 0 0 0 4.5 18.75Z"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <span class="text-xs font-medium">Training</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-gray-500" href="profile.html">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <span class="text-xs font-medium">Profile</span>
+                </a>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

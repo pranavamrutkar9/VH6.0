@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --primary-color: #ea2a33;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+      }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <div class="relative flex min-h-screen flex-col justify-center overflow-x-hidden">
+        <main class="flex-grow">
+            <div class="mx-auto flex max-w-md flex-col px-4 pt-12">
+                <div class="text-center">
+                    <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Farm Biosecurity</h1>
+                    <p class="mt-2 text-lg text-gray-600">Welcome</p>
+                </div>
+                <div class="mt-10">
+                    <div class="space-y-6">
+                        <div>
+                            <a href="login.html"
+                                class="flex w-full justify-center rounded-md border border-transparent bg-[var(--primary-color)] py-3 px-4 text-base font-bold text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                                Login
+                            </a>
+                        </div>
+                        <div>
+                            <a href="register.html"
+                                class="flex w-full justify-center rounded-md border border-gray-300 bg-white py-3 px-4 text-base font-bold text-gray-700 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
